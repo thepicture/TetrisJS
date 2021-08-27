@@ -1,0 +1,47 @@
+.game-field {
+    position: fixed;
+    background-color: black;
+    transition: background-color 5000ms ease-in-out;
+}
+
+.block {
+    position: absolute;
+    transition: left 100ms ease, top 100ms ease, background-color 2000ms ease-in-out;
+}
+
+.interface-button {
+    position: absolute;
+    text-align: center;
+    border: 5px solid black;
+    background-color: yellow;
+    font-size: x-large;
+    transition: background-color 200ms ease, font-size 200ms ease;
+    cursor: pointer;
+}
+
+.interface-button:hover {
+    font-size: xx-large;
+    background-color: orange;
+}
+
+.info {
+    color: white;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.score {
+    color: white;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: x-large;
+    text-align: right;
+    font-weight: bold;
+    z-index: 1;
+}
