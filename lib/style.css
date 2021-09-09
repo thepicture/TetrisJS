@@ -45,3 +45,7 @@
     font-weight: bold;
     z-index: 1;
 }
+
+#buttons {
+    position: absolute;
+}
