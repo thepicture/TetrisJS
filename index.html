@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="EN-en">
 <head>
     <link rel="stylesheet" href="lib/style.css"/>
+    <title>TetrisJS</title>
 </head>
 
 <body>
-<div class="game-field">
-    <div class="info">TetrisJS</div>
-    <div class="score" hidden>Score: 0</div>
-</div>
-<div class="interface-button">Start</div>
-<div id="buttons">
-    <div id="leftBtn" class="interface-button">Left</div>
-    <div id="downBtn" class="interface-button">Down</div>
-    <div id="rightBtn" class="interface-button">Right</div>
+<div class="centered-block">
+    <div class="game-field">
+        <div class="info">TetrisJS</div>
+        <div class="score" hidden>Score: 0</div>
+    </div>
+    <div class="interface-button">Start</div>
+    <div id="buttons">
+        <table class="game-buttons" id="buttonsTable">
+            <tbody>
+            <tr>
+                <td class="transparent-button"></td>
+                <td class="transparent-button"></td>
+                <td class="transparent-button"></td>
+            </tr>
+            <tr>
+                <td id="leftBtn">&lt</td>
+                <td id="rotateBtn">@</td>
+                <td id="rightBtn">&gt</td>
+            </tr>
+            <tr>
+                <td class="transparent-button"></td>
+                <td id="downBtn">v</td>
+                <td class="transparent-button"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <script src="lib/script.js"></script>
