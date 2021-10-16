@@ -48,14 +48,15 @@
 
 #buttons {
     position: relative;
-    display: flex;
     justify-content: center;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-buttons {
     width: 120px;
-    margin-bottom: 100px;
 }
 
 .game-buttons tbody tr {
